@@ -15,8 +15,7 @@ spec:
       serviceAccountName: app-operator
       containers:
         - name: app-operator
-          # Replace this with the built image name
-          image: REPLACE_IMAGE
+          image: quay.io/ciaranroche/memcached-operator:v0.0.2
           ports:
           - containerPort: 60000
             name: metrics
